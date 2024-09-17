@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure the footer stays at the bottom */
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* Header styling */
+.header {
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Seat booking container */
+.seat-booking {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Adjust search bar size */
+.seat-booking input {
+  padding: 8px; /* Reduced padding */
+  width: 150px; /* Reduced width */
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Adjust button size */
+.seat-booking button {
+  padding: 9px 20px; /* Reduced padding */
+  background-color: #304760;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.seat-booking button:hover {
+  background-color: #0056b3;
+}
+
+/* Seat layout */
+.seats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  flex-grow: 1; /* Allow seats section to grow and fill available space */
+}
+
+/* Row and seat styling */
+.row {
+  display: flex;
+  gap: 5px;
+}
+
+span {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 30px;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+span:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.2);
+}
+
+span.booked {
+  background-color: #f44336;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* Tooltip for booked seats */
+span.booked::after {
+  content: 'Booked';
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+span.booked:hover::after {
+  opacity: 1;
+}
+
+/* Footer styling */
+.footer {
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 30px; /* Increased icon size */
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: rgb(16, 98, 192);
+}
+
+/* Seat status info */
+.seat-info {
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Vacant seat styling */
+span.vacant {
+  background-color: #d3ffd3; /* Light green for vacant seats */
+}
+
+/* Booked seat styling */
+span.booked {
+  background-color: #f44336;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* Add new styles for seat status display */
+.seat-status {
+  margin: 20px;
+  text-align: center;
+}
+
+.booked-seats, .available-seats {
+  margin: 10px 0;
+}
+
+.booked-seats span, .available-seats span {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.booked-seats span {
+  background-color: #f44336; /* Red for booked seats */
+}
+
+.available-seats span {
+  background-color: #4CAF50; /* Green for available seats */
+}
+
