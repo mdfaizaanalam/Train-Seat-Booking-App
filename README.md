@@ -7,7 +7,11 @@ A web application for booking and managing train seat reservations. Built with A
 [![Node.js](https://img.shields.io/badge/Node.js-v18-green)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+<<<<<<< HEAD
 **Live Demo:** 🚀 [Train Seat Booking App](https://train-seat-booking.web.app/)
+=======
+**Live Demo:** [🚀 Train Seat Booking](https://train-seat-booking.web.app/)
+>>>>>>> fd3b4ebd492d829d07a75606038955982526ef29
 
 ## 📋 Table of Contents
 
@@ -19,6 +23,11 @@ A web application for booking and managing train seat reservations. Built with A
   - [🔥 Firebase Setup](#-firebase-setup)
 - [💻 Running the Application](#-running-the-application)
 - [☁️ Deployment](#-deployment)
+<<<<<<< HEAD
+=======
+- [📂 Project Structure](#-project-structure)
+- [🤝 Contributing](#-contributing)
+>>>>>>> fd3b4ebd492d829d07a75606038955982526ef29
 - [📄 License](#-license)
 
 ## ✨ Features
@@ -44,6 +53,7 @@ A web application for booking and managing train seat reservations. Built with A
 
 ### 🔧 Installation
 
+<<<<<<< HEAD
 1. **Clone the repository:**
     ```bash
      https://github.com/mdfaizaanalam/Train-Seat-Booking-App.git
@@ -117,3 +127,9 @@ A web application for booking and managing train seat reservations. Built with A
 ## 📜 License
 This project is licensed under the MIT License.
 
+=======
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/train-seat-reservation.git
+>>>>>>> fd3b4ebd492d829d07a75606038955982526ef29
